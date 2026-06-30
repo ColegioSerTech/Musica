@@ -461,7 +461,16 @@
   window.addEventListener('resize', fitFrame);
   window.addEventListener('orientationchange', fitFrame);
 
-  showScreen('cover');
+  // Always start from the cover, even if the browser restores this page
+  // from its back/forward cache (bfcache) instead of doing a fresh load —
+  // this is what was causing the quiz to "reopen" on whatever screen the
+  // visitor had last reached.
+  function resetToCover(){
+    fitFrame();
+    showScreen('cover');
+  }
+  resetToCover();
+  window.addEventListener('pageshow', resetToCover);
 </script>
 
 <style>
