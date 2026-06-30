@@ -231,7 +231,7 @@
 
     <!-- ===================== COVER ===================== -->
     <div class="screen active" data-screen="cover">
-      <img class="bg" src="images/1-capa.png" alt="Quiz de música">
+      <img class="bg" src="1-capa.png" alt="Quiz de música">
       <button class="hotspot round cta-pulse" data-action="goto" data-target="instructions"
         style="left:44.5%; top:81.8%; width:9%; height:16%;"
         aria-label="Começar"></button>
@@ -239,7 +239,7 @@
 
     <!-- ===================== INSTRUCTIONS ===================== -->
     <div class="screen" data-screen="instructions">
-      <img class="bg" src="images/2-instrucoes.png" alt="Instruções">
+      <img class="bg" src="2-instrucoes.png" alt="Instruções">
       <button class="hotspot fullscreen" data-action="goto" data-target="start"
         style="left:0; top:0; width:100%; height:100%;"
         aria-label="Continuar"></button>
@@ -247,7 +247,7 @@
 
     <!-- ===================== START ===================== -->
     <div class="screen" data-screen="start">
-      <img class="bg" src="images/3-start.png" alt="Prontos para começar?">
+      <img class="bg" src="3-start.png" alt="Prontos para começar?">
       <button class="hotspot cta-pulse" data-action="goto" data-target="q-bieber"
         style="left:39.8%; top:74.6%; width:20.8%; height:14.4%; border-radius:40px;"
         aria-label="Start"></button>
@@ -282,12 +282,12 @@
   // (full high-res background image revealing the artist).
   // -------------------------------------------------------------
   const ROUNDS = [
-    { key:'bieber',    audioVar:'audio/baby-justin-bieber.mp3',    imgVar:'images/5-resposta-bieber.png'    },
-    { key:'chicago',   audioVar:'audio/chicago-michael-jackson.mp3',   imgVar:'images/7-resposta-chicago.png'   },
-    { key:'pais',      audioVar:'audio/pais-do-futebol-mg-guime.mp3',      imgVar:'images/9-resposta-pais.png'      },
-    { key:'allstar',   audioVar:'audio/all-star-smash-mouth.mp3',   imgVar:'images/11-resposta-allstar.png'   },
-    { key:'thunder',   audioVar:'audio/thunder-imagine-dragons.mp3',   imgVar:'images/13-resposta-thunder.png'   },
-    { key:'vagalumes', audioVar:'audio/vagalumes-pollo.mp3', imgVar:'images/15-resposta-vagalumes.png' },
+    { key:'bieber',    audioVar:'baby-justin-bieber.mp3',    imgVar:'5-resposta-bieber.png'    },
+    { key:'chicago',   audioVar:'chicago-michael-jackson.mp3',   imgVar:'7-resposta-chicago.png'   },
+    { key:'pais',      audioVar:'pais-do-futebol-mg-guime.mp3',      imgVar:'9-resposta-pais.png'      },
+    { key:'allstar',   audioVar:'all-star-smash-mouth.mp3',   imgVar:'11-resposta-allstar.png'   },
+    { key:'thunder',   audioVar:'thunder-imagine-dragons.mp3',   imgVar:'13-resposta-thunder.png'   },
+    { key:'vagalumes', audioVar:'vagalumes-pollo.mp3', imgVar:'15-resposta-vagalumes.png' },
   ];
 
   const container = document.getElementById('rounds-container');
@@ -357,12 +357,12 @@
   // Audio sources (data URIs injected at build time)
   // -------------------------------------------------------------
   const AUDIO_SRC = {
-    bieber:    'audio/baby-justin-bieber.mp3',
-    chicago:   'audio/chicago-michael-jackson.mp3',
-    pais:      'audio/pais-do-futebol-mg-guime.mp3',
-    allstar:   'audio/all-star-smash-mouth.mp3',
-    thunder:   'audio/thunder-imagine-dragons.mp3',
-    vagalumes: 'audio/vagalumes-pollo.mp3',
+    bieber:    'baby-justin-bieber.mp3',
+    chicago:   'chicago-michael-jackson.mp3',
+    pais:      'pais-do-futebol-mg-guime.mp3',
+    allstar:   'all-star-smash-mouth.mp3',
+    thunder:   'thunder-imagine-dragons.mp3',
+    vagalumes: 'vagalumes-pollo.mp3',
   };
 
   // -------------------------------------------------------------
